@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from .views import probando_templates
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('probando_templates/<name>', probando_templates),
 ]
